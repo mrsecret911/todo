@@ -1,0 +1,23 @@
+@import '../../variables.scss';
+
+.todo-item {
+    display: flex;
+    padding: 10px 0;
+    cursor: pointer;
+
+    input {
+        margin-right: 10px;
+        cursor: pointer;
+
+        &:checked + span {
+            color: $silver;
+            text-decoration: line-through;
+        }
+    }
+
+    span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
